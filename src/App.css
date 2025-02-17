@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-font {
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+.terminal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #4a4a4a #1c1c1c;
+}
+
+.terminal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a;
+  border-radius: 4px;
+}
+
+.terminal-prompt {
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.terminal-response {
+  text-shadow: 0 0 8px rgba(156, 163, 175, 0.1);
+}
+
+.caret {
+  animation: blink 1s step-end infinite;
+}
